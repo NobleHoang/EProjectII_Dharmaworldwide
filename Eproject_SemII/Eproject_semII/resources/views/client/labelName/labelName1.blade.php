@@ -129,6 +129,7 @@
 
         .search-product {
             height: 30px;
+            margin-right: -10px
             /*margin-top: 25px;*/
         }
 
@@ -140,10 +141,10 @@
             <div class="col-lg-12">
                 <div class="hero__item__garden garden-name1" data-setbg="/libs/client/img/garden-3.jpg">
                     <div class="garden">
-                        <span>RAU SẠCH</span>
-                        <h1>Vườn Rau,<br/>Trái Cây Sạch Bà Họa</h1>
-                        <p>Nhận và giao hàng miễn phí có sẵn</p>
-                        <a href="/products" class="primary-btn">Mua Ngay</a>
+                        <span>Release Music</span>
+                        <h1>Music<br/>From Monstercat</h1>
+                        <p>Fast payment</p>
+                        <a href="/products" class="primary-btn">Buy Now</a>
                     </div>
                 </div>
             </div>

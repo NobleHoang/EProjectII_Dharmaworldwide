@@ -130,6 +130,7 @@
         .search-product {
             height: 30px;
             /*margin-top: 25px;*/
+            margin-right: -10px
         }
 
     </style>
@@ -140,10 +141,11 @@
             <div class="col-lg-12">
                 <div class="hero__item__garden garden-name4" data-setbg="/libs/client/img/garden-3.jpg">
                     <div class=" garden">
-                        <span>RAU SẠCH</span>
-                        <h1>Nhà Vườn<br/> Quang Huy</h1>
-                        <p>Nhận và giao hàng miễn phí có sẵn</p>
-                        <a href="/products" class="primary-btn">Mua Ngay</a>
+                        <span>Techno,Trance</span>
+                        <h1>Record<br/> made by Hardwell </h1>
+                        <p>
+                            Specializes in samples for techhouse music....</p>
+                        <a href="/products" class="primary-btn">Buy Now</a>
                     </div>
                 </div>
             </div>

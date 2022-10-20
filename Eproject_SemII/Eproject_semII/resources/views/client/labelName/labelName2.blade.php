@@ -129,6 +129,7 @@
 
         .search-product {
             height: 30px;
+            margin-right: -10px
             /*margin-top: 25px;*/
         }
 
@@ -140,10 +141,12 @@
             <div class="col-lg-12">
                 <div class="hero__item__garden garden-name2">
                     <div class="garden">
-                        <span>RAU SẠCH</span>
-                        <h1>Rau Sạch <br/> Minh Hiệp</h1>
-                        <p>Nhận và giao hàng miễn phí có sẵn</p>
-                        <a href="/products" class="primary-btn">Mua Ngay</a>
+                        <span>Sample Pack-</span>
+                        <h1>Sound<br/> UltraSonic</h1>
+                        <p>
+
+                            Many genres of music</p>
+                        <a href="/products" class="primary-btn">Buy Now</a>
                     </div>
                 </div>
             </div>
@@ -270,9 +273,9 @@
                             <div class="col-lg-4 col-md-3">
                                 <form action="" id="filter_form">
                                     <div class="row">
-                                        <input class="search-product" type="text" name="search" id="search"
-                                               placeholder="Tìm Kiếm">
-                                        <button type="submit" class="btn-success">Tìm Kiếm</button>
+                                        <input class="search-product" type="text" name="search" id="Search in Ultrasonic"
+                                               placeholder="Search">
+                                        <button type="submit" class="btn-success">Search</button>
                                     </div>
                                 </form>
                             </div>

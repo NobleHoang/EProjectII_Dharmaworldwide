@@ -1175,7 +1175,7 @@
                 '<div class="pull-' + this.options.searchAlign + ' search">',
                 sprintf('<input class="form-control' +
                     sprintf(' input-%s', this.options.iconSize) +
-                    '" type="text" placeholder="Tìm Kiếm">',
+                    '" type="text" placeholder="Search">',
                     this.options.formatSearch()),
                 '</div>');
 

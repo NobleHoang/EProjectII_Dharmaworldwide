@@ -25,12 +25,12 @@
             {{--                    <li><a href="/checkout">Thanh Toán</a></li>--}}
             {{--                </ul>--}}
             {{--            </li>--}}
-            <li><a href="#">Nhà Vườn</a>
+            <li><a href="#">Label</a>
                 <ul class="header__menu__dropdown">
-                    <li><a href="/label/name1">Vườn rau, trái cây sạch bà Họa</a></li>
-                    <li><a href="/label/name2">Rau sạch Minh Hiệp</a></li>
-                    <li><a href="/label/name3">Nhà Vườn Duy Quang</a></li>
-                    <li><a href="/label/name4">Nhà Vườn Quang Huy</a></li>
+                    <li><a href="/label/name1">Monstercat</a></li>
+                    <li><a href="/label/name2">Ultra Sonic</a></li>
+                    <li><a href="/label/name3">Dharma</a></li>
+                    <li><a href="/label/name4">Revealed</a></li>
                 </ul>
             </li>
             <li><a href="/contact">Contact</a></li>
@@ -118,7 +118,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hero__item set-bg" data-setbg="/libs/client/img/hero/img_2.png">
+                <div class="hero__item set-bg" data-setbg="/libs/client/img/hero/main_banner.jpg">
                     <div class="hero__text">
                         <span>D H A R M A</span>
                         <h2>Courses<br/>100% quality</h2>

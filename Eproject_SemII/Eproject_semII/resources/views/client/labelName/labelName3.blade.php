@@ -130,6 +130,8 @@
         .search-product {
             height: 30px;
             /*margin-top: 25px;*/
+            margin-right: -10px;
+            color: #b2b2b2;
         }
 
     </style>
@@ -140,10 +142,11 @@
             <div class="col-lg-12">
                 <div class="hero__item__garden garden-name3" data-setbg="/libs/client/img/gd3.jpg">
                     <div class="garden">
-                        <span>RAU SẠCH</span>
-                        <h1>Nhà Vườn <br/> Duy Quang</h1>
-                        <p>Nhận và giao hàng miễn phí có sẵn</p>
-                        <a href="/products" class="primary-btn">Mua Ngay</a>
+                        <span>Sound,Plugin</span>
+                        <h1>Dharma <br/> Worldwide</h1>
+                        <p>
+                            Featured music of India</p>
+                        <a href="/products" class="primary-btn">Buy Now</a>
                     </div>
                 </div>
             </div>

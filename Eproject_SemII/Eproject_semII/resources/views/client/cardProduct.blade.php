@@ -143,7 +143,7 @@
                                 <div class="card-body">
                                     <dl class="dlist-align">
                                         <dt>Total :</dt>
-                                        <dd class="text-right text-dark b ml-3"><strong>{{number_format($totalPrice)}} VND</strong>
+                                        <dd class="text-right text-dark b ml-3"><strong>{{number_format($totalPrice)}} $</strong>
                                         </dd>
                                     </dl>
                                     <hr>

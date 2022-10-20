@@ -9,7 +9,7 @@
                     <ul>
                         <li>Address: 8 Tôn Thất Thuyết, Mỹ Đình, Cầu Giấy, Hà Nội, Việt Nam</li>
                         <li>Phone: +84 88.888.888</li>
-                        <li>Email: eproject@gmail.com</li>
+                        <li>Email: 5superhero@gmail.com</li>
                     </ul>
                 </div>
             </div>
@@ -22,7 +22,7 @@
 
                         <li><a href="#">
                                 Safe shopping</a></li>
-                        <li><a href="/contact">COntact</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
                 </div>
             </div>

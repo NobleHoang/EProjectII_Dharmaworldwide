@@ -2517,6 +2517,7 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner {
 
 .garden-name5 {
     background-image: url(/libs/client/img/garden/garden-3.jpg);
+    background-repeat: no-repeat;
 }
 
 .garden-name1 {
@@ -4041,7 +4042,7 @@ ul, ol {
 
 .hero__text h2 {
     font-size: 46px;
-    color: #252525;
+    color:  #996600;
     line-height: 52px;
     font-weight: 700;
     margin: 10px 0
