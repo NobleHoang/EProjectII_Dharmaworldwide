@@ -51,11 +51,13 @@ class FormProductRequest extends FormRequest
             'thumbnail.required' => 'Please add product pictures',
             'labelName.required' => 'Please enter file size',
             'category.required' => 'Please enter Label Name',
-            'weight.required' => 'Vui lòng nhập cân nặng sản phẩm',
-            'Tag.required' => 'Vui lòng nhập vitamin sản phẩm',
-            'labelTitle.required' => 'Vui lòng nhập chất ding dưỡng sản phẩm',
-            'price.required' => 'Vui lòng nhập giá sản phẩm',
-            'labelName.min' => 'Tên nhà vườn tối thiểu 5 ký tự',
+            'weight.required' => 'Please enter product size',
+            'Tag.required' => 'Please enter hashtags',
+            'labelTitle.required' => 'please enter label name',
+            'price.required' => '
+Please enter price',
+            'labelName.min' => '
+please enter label name',
         ];
     }
 }

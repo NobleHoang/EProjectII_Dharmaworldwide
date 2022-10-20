@@ -36,18 +36,18 @@ class FormUserRequest extends FormRequest
     public function messages()
     {
         return [
-            'fullName.required' => 'Vui lòng nhập họ và tên',
-            'phone.required' => 'Vui lòng nhập số điện thoại',
-            'email.required' => 'Vui lòng nhập email',
-            'address.required' => 'Vui lòng nhập địa chỉ',
-            'username.required' => 'Vui lòng nhập tài khoản',
-            'password.required' => 'Vui lòng nhập mật khẩu',
-            'email.min' => 'Email tối thiểu là 5 ký tự',
-            'username.min' => 'Tài khoản tối thiểu là 5 ký tự',
-            'password.min' => 'Mật khẩu quá yếu',
-            'fullName.min' => 'Họ là tên tối thiểu là 5 ký tự',
-            'phone.numeric' => 'Số điện thoại phải là số',
-            'phone.min' => 'Số điện thoại tối thiểu là 9 số',
+            'fullName.required' => 'Please enter your name',
+            'phone.required' => 'Please enter your phone',
+            'email.required' => 'Please enter email',
+            'address.required' => 'Please enter address',
+            'username.required' => 'Please enter username',
+            'password.required' => 'Please enter password',
+            'email.min' => 'Email at least 5 characters',
+            'username.min' => 'Username at least 5 characters',
+            'password.min' => 'password is too weak',
+            'fullName.min' => 'Last name at least 5 characters',
+            'phone.numeric' => 'Phone number must be',
+            'phone.min' => 'phone number at least 9 digits',
 
 
         ];

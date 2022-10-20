@@ -1,4 +1,4 @@
-@section('title', 'Sản Phẩm')
+@section('title', 'Product | UltraSonic')
 @extends('client.layouts.master-1')
 @section('custom-style')
 
