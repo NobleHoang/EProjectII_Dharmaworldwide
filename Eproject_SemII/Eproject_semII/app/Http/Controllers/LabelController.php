@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Garden;
+use App\Models\Label;
 use Illuminate\Http\Request;
 
-class GardenController extends Controller
+class LabelController extends Controller
 {
     public function index()
     {
-        $list = Garden::all();
-        return view('/client/garden', ['list' => $list]);
+        $list = Label::all();
+        return view('/client/label', ['list' => $list]);
     }
 
     /**
@@ -37,10 +37,10 @@ class GardenController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Garden  $garden
+     * @param  \App\Models\Label  $label
      * @return \Illuminate\Http\Response
      */
-    public function show(Garden $garden)
+    public function show(Label $label)
     {
         //
     }
@@ -48,10 +48,10 @@ class GardenController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Garden  $garden
+     * @param  \App\Models\Label  $label
      * @return \Illuminate\Http\Response
      */
-    public function edit(Garden $garden)
+    public function edit(Label $label)
     {
         //
     }
@@ -60,10 +60,10 @@ class GardenController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Garden  $garden
+     * @param  \App\Models\Label  $label
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Garden $garden)
+    public function update(Request $request, Label $label)
     {
         //
     }
@@ -71,10 +71,10 @@ class GardenController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Garden  $garden
+     * @param  \App\Models\Label  $label
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Garden $garden)
+    public function destroy(Label $label)
     {
         //
     }

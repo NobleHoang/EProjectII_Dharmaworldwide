@@ -53,12 +53,13 @@
                     <table class="table table-bordered">
                         <thead>
                         <tr>
-                            <th>Tên sản phẩm</th>
-                            <th>Màu</th>
-                            <th>Ảnh</th>
-                            <th>Cấu hình</th>
-                            <th>Giá/sản phẩm (vnđ)</th>
-                            <th>Số lượng</th>
+                            <th>Product Name</th>
+                            <th>Color</th>
+                            <th>Picture</th>
+                            <th>
+                                configuration(Cấu hình)</th>
+                            <th>Price ($)</th>
+                            <th>Quantity</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -70,7 +71,7 @@
                                 <td>{{$order_detail->product_option->ram}}GB/RAM
                                     - {{$order_detail->product_option->rom}}GB/ROM
                                 </td>
-                                <td>{{number_format($order_detail->unit_price)}} vnđ</td>
+                                <td>{{number_format($order_detail->unit_price)}} $</td>
                                 <td>{{$order_detail->quantity}}</td>
                             </tr>
                         @endforeach
@@ -81,10 +82,11 @@
             </div>
             <div class="text-secondary  col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="col-lg-12 p-0 ">
-                    <p><strong>Tổng tiền hàng: </strong>{{number_format($order->total_price)}} vnđ</p>
-                    <p><strong>Mã đơn hàng: </strong>#{{$order->order_code}}</p>
-                    <p><strong>Ngày tạo: </strong>{{$order_detail->created_at}}</p>
-                    <p><strong>Thanh toán: </strong>{{$order->is_checkout == \App\Enums\CheckoutStatus::UNPAID ? 'Chưa thanh toán' : 'Đã thanh toán'}}</p>
+                    <p><strong>Total: </strong>{{number_format($order->total_price)}} $</p>
+                    <p><strong>
+                            code orders: </strong>#{{$order->order_code}}</p>
+                    <p><strong>Create Date: </strong>{{$order_detail->created_at}}</p>
+                    <p><strong>pay: </strong>{{$order->is_checkout == \App\Enums\CheckoutStatus::UNPAID ? 'Chưa thanh toán' : 'Đã thanh toán'}}</p>
                 </div>
             </div>
         </div>

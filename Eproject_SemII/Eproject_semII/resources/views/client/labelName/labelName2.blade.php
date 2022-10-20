@@ -1,4 +1,4 @@
-@section('title', 'Product | Dharma worldwide')
+@section('title', 'Sản Phẩm')
 @extends('client.layouts.master-1')
 @section('custom-style')
 
@@ -138,10 +138,10 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="hero__item__garden garden-name3" data-setbg="/libs/client/img/gd3.jpg">
+                <div class="hero__item__garden garden-name2">
                     <div class="garden">
                         <span>RAU SẠCH</span>
-                        <h1>Nhà Vườn <br/> Duy Quang</h1>
+                        <h1>Rau Sạch <br/> Minh Hiệp</h1>
                         <p>Nhận và giao hàng miễn phí có sẵn</p>
                         <a href="/products" class="primary-btn">Mua Ngay</a>
                     </div>
@@ -154,7 +154,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 section-title">
-                    <h2>Product of Dharma Studio</h2>
+                    <h2>Product of Ultra Sonic</h2>
                 </div>
                 <div class="col-lg-3 col-md-5">
                     <div class="sidebar">
@@ -164,27 +164,23 @@
                                 <form action="" id="filter_form">
                                     <select class="selectpicker form-control" id="price" name="price">
                                         <option selected disabled hidden>Filter by price</option>
-                                        <option value="1" {{$price && $price == 1 ? 'selected':''}}>0-20$
-                                        </option>
-                                        <option value="2" {{$price && $price == 2 ? 'selected':''}}>20-50$
-                                        </option>
-                                        <option value="3" {{$price && $price == 3 ? 'selected':''}}>50-100$
-                                        </option>
-                                        <option value="4" {{$price && $price == 4 ? 'selected':''}}>> 100.000$
-                                        </option>
+                                        <option value="1" {{$price && $price == 1 ? 'selected':''}}>0-20 $</option>
+                                        <option value="2" {{$price && $price == 2 ? 'selected':''}}>20-50 $</option>
+                                        <option value="3" {{$price && $price == 3 ? 'selected':''}}>50-100 $</option>
+                                        <option value="4" {{$price && $price == 4 ? 'selected':''}}>> 100 $</option>
                                     </select>
                                     <select class="selectpicker form-control" id="category" name="category">
                                         <option selected disabled hidden>Filter by category</option>
-                                        <option value="1" {{$category && $category == 1 ? 'selected':''}}>Rau</option>
-                                        <option value="2" {{$category && $category == 2 ? 'selected':''}}>Củ</option>
-                                        <option value="3" {{$category && $category == 3 ? 'selected':''}}>Quả</option>
+                                        <option value="1" {{$category && $category == 1 ? 'selected':''}}>Progressive House</option>
+                                        <option value="2" {{$category && $category == 2 ? 'selected':''}}>Futurebass</option>
+                                        <option value="3" {{$category && $category == 3 ? 'selected':''}}>Bigroom</option>
                                     </select>
                                 </form>
                             </ul>
                         </div>
                         <div class="sidebar__item">
                             <div class="latest-product__text">
-                                <h4>New product</h4>
+                                <h4>New Product</h4>
                                 <div class="latest-product__slider owl-carousel">
                                     <div class="latest-prdouct__slider__item">
                                         <a href="#" class="latest-product__item">
@@ -275,15 +271,15 @@
                                 <form action="" id="filter_form">
                                     <div class="row">
                                         <input class="search-product" type="text" name="search" id="search"
-                                               placeholder="Enter your keyword">
-                                        <button type="submit" class="btn-success">Search</button>
+                                               placeholder="Tìm Kiếm">
+                                        <button type="submit" class="btn-success">Tìm Kiếm</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        @foreach($garden as $obj)
+                        @foreach($labelName as $obj)
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
                                     <div class="product__item__pic set-bg" data-setbg="{{$obj->thumbnail}}">
@@ -295,7 +291,7 @@
                                     </div>
                                     <div class="product__item__text">
                                         <h6>{{$obj->name}}</h6>
-                                        <h6><a href="#">{{$obj->gardenName}}</a></h6>
+                                        <h6><a href="#">{{$obj->labelName}}</a></h6>
                                         <h5>{{number_format($obj->price)}} $</h5>
                                     </div>
                                 </div>
@@ -335,7 +331,7 @@
             $('#price').change(function () {
                 $('#filter_form').submit()
             })
-            $('#gardenName').change(function () {
+            $('#labelName').change(function () {
                 $('#filter_form').submit()
             })
             $('#category').change(function () {

@@ -13,7 +13,7 @@
                         <div class="row g-0">
                             <div class="col-xl-6 d-none d-xl-block">
                                 <img
-                                    src="/libs/client/img/img-form.jpg"
+                                    src="/libs/client/img/logo/logo2.jpg"
                                     width="525px" height="650px"
                                 />
                             </div>
@@ -23,14 +23,14 @@
                                 <form action="{{ route('postRegister') }}" method="post">
                                     @csrf
                                     <div class="card-body p-md-5 text-black">
-                                        <h3 class="mb-3 text-uppercase text-center">Đăng Ký</h3>
+                                        <h3 class="mb-3 text-uppercase text-center">Register</h3>
                                         @if(session('success'))
                                             <div class="text-danger" style="font-weight: bold; margin-bottom: 10px;">
                                                 {{session('success')}}
                                             </div>
                                         @endif
                                         <div class="form-outline mb-4">
-                                            <label class="form-label">Họ và tên</label>
+                                            <label class="form-label">Fullname</label>
                                             <input type="text" class="form-control border-success" name="fullName" placeholder=" ">
                                             @error('fullName')
                                             <div class="text-danger">* {{ $message }}</div>
@@ -41,7 +41,7 @@
                                         <div class="row">
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <label class="form-label">Số điện thoại</label>
+                                                    <label class="form-label">Phone</label>
                                                     <input type="text" class="form-control border-success" name="phone"
                                                            placeholder=" ">
                                                 </div>
@@ -51,7 +51,7 @@
                                             </div>
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <label class="form-label">Địa chỉ</label>
+                                                    <label class="form-label">Address</label>
                                                     <input type="text" class="form-control border-success" name="address"
                                                            placeholder=" ">
                                                 </div>
@@ -70,7 +70,7 @@
                                         </div>
 
                                         <div class="form-outline mb-4">
-                                            <label class="form-label">Tài khoản</label>
+                                            <label class="form-label">Username</label>
                                             <input type="text" class="form-control border-success" name="username"
                                                    placeholder=" ">
                                             @error('username')
@@ -79,7 +79,7 @@
                                         </div>
 
                                         <div class="form-outline mb-4">
-                                            <label class="form-label">Mật khẩu</label>
+                                            <label class="form-label">Password</label>
                                             <input type="password" class="form-control border-success" name="password"
                                                    placeholder=" ">
                                             @error('password')
@@ -89,7 +89,7 @@
 
 
                                         <div class="row justify-content-center px-3">
-                                            <button type="submit" class="btn-block btn-submit">Gửi</button>
+                                            <button type="submit" class="btn-block btn-submit">Send</button>
                                         </div>
 
                                     </div>

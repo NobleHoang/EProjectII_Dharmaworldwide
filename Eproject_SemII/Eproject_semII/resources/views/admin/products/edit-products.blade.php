@@ -88,9 +88,9 @@
                                         <div class="col-md-6 mb-4">
                                             <div class="form-outline mb-4">
                                                 <label class="form-label">Label Name</label>
-                                                <input type="text" class="form-control border-success" name="gardenName"
-                                                       placeholder=" " value="{{$edit->gardenName}}">
-                                                @error('gardenName')
+                                                <input type="text" class="form-control border-success" name="labelName"
+                                                       placeholder=" " value="{{$edit->labelName}}">
+                                                @error('labelName')
                                                 <div class="text-danger">* {{ $message }}</div>
                                                 @enderror
                                             </div>
@@ -98,10 +98,10 @@
                                         <div class="col-md-6 mb-4">
                                             <div class="form-outline">
                                                 <label class="form-label">Tag</label>
-                                                <input type="text" class="form-control border-success" name="nutrient"
-                                                       placeholder=" " value="{{$edit->nutrient}}">
+                                                <input type="text" class="form-control border-success" name="Tag"
+                                                       placeholder=" " value="{{$edit->Tag}}">
                                             </div>
-                                            @error('nutrient')
+                                            @error('Tag')
                                             <div class="text-danger">* {{ $message }}</div>
                                             @enderror
                                         </div>
@@ -109,9 +109,9 @@
 
                                     <div class="form-outline mb-4">
                                         <label class="form-label">label</label>
-                                        <input type="text" class="form-control border-success" name="vitamin"
-                                               placeholder="" value="{{$edit->vitamin}}">
-                                        @error('vitamin')
+                                        <input type="text" class="form-control border-success" name="labelTitle"
+                                               placeholder="" value="{{$edit->labelTitle}}">
+                                        @error('labelTitle')
                                         <div class="text-danger">* {{ $message }}</div>
                                         @enderror
                                     </div>

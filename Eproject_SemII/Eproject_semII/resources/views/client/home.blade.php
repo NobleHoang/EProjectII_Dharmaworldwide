@@ -29,9 +29,9 @@
                     <div class="featured__controls">
                         <ul>
                             <li class="active" data-filter="*">All</li>
-                            <li data-filter=".vegetables">Rau</li>
-                            <li data-filter=".bulb">Củ</li>
-                            <li data-filter=".fruit">Quả</li>
+                            <li data-filter=".vegetables">Progressive House</li>
+                            <li data-filter=".bulb">FutureBass</li>
+                            <li data-filter=".fruit">Bigroom</li>
                         </ul>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="latest-product__text">
-                        <h4>Sản Phẩm Mới Nhất</h4>
+                        <h4>New Product</h4>
                         <div class="latest-product__slider owl-carousel">
                             <div class="latest-prdouct__slider__item">
                                 <a href="#" class="latest-product__item">
@@ -165,146 +165,146 @@
                         </div>
                     </div>
                 </div>
-{{--                <div class="col-lg-4 col-md-6">--}}
-{{--                    <div class="latest-product__text">--}}
-{{--                        <h4>Tốt Cho Mùa Dịch</h4>--}}
-{{--                        <div class="latest-product__slider owl-carousel">--}}
-{{--                            <div class="latest-prdouct__slider__item">--}}
-{{--                                <a href="#" class="latest-product__item">--}}
-{{--                                    <div class="latest-product__item__pic">--}}
-{{--                                        <img src="{{$newProduct[82] -> thumbnail}}">--}}
-{{--                                    </div>--}}
-{{--                                    <div class="latest-product__item__text">--}}
-{{--                                        <h6>{{$newProduct[82] -> name}}</h6>--}}
-{{--                                        <span>{{number_format($newProduct[82] -> price)}} $</span>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                                <a href="#" class="latest-product__item">--}}
-{{--                                    <div class="latest-product__item__pic">--}}
-{{--                                        <img src="{{$newProduct[23] -> thumbnail}}"--}}
-{{--                                             alt="">--}}
-{{--                                    </div>--}}
-{{--                                    <div class="latest-product__item__text">--}}
-{{--                                        <h6>{{$newProduct[23] -> name}}</h6>--}}
-{{--                                        <span>{{number_format($newProduct[23] -> price)}} $</span>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                                <a href="#" class="latest-product__item">--}}
-{{--                                    <div class="latest-product__item__pic">--}}
-{{--                                        <img src="{{$newProduct[86] -> thumbnail}}"--}}
-{{--                                             alt="">--}}
-{{--                                    </div>--}}
-{{--                                    <div class="latest-product__item__text">--}}
-{{--                                        <h6>{{$newProduct[86] -> name}}</h6>--}}
-{{--                                        <span>{{number_format($newProduct[86] -> price)}} $</span>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                            <div class="latest-prdouct__slider__item">--}}
-{{--                                <a href="#" class="latest-product__item">--}}
-{{--                                    <div class="latest-product__item__pic">--}}
-{{--                                        <img src="{{$newProduct[75] -> thumbnail}}"--}}
-{{--                                             alt="">--}}
-{{--                                    </div>--}}
-{{--                                    <div class="latest-product__item__text">--}}
-{{--                                        <h6>{{$newProduct[75] -> name}}</h6>--}}
-{{--                                        <span>{{number_format($newProduct[75] -> price)}} $</span>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                                <a href="#" class="latest-product__item">--}}
-{{--                                    <div class="latest-product__item__pic">--}}
-{{--                                        <img src="{{$newProduct[68] -> thumbnail}}"--}}
-{{--                                             alt="">--}}
-{{--                                    </div>--}}
-{{--                                    <div class="latest-product__item__text">--}}
-{{--                                        <h6>{{$newProduct[68] -> name}}</h6>--}}
-{{--                                        <span>{{number_format($newProduct[68] -> price)}} $</span>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                                <a href="#" class="latest-product__item">--}}
-{{--                                    <div class="latest-product__item__pic">--}}
-{{--                                        <img src="{{$newProduct[8] -> thumbnail}}"--}}
-{{--                                             alt="">--}}
-{{--                                    </div>--}}
-{{--                                    <div class="latest-product__item__text">--}}
-{{--                                        <h6>{{$newProduct[8] -> name}}</h6>--}}
-{{--                                        <span>{{number_format($newProduct[8] -> price)}} $</span>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="col-lg-4 col-md-6">--}}
-{{--                    <div class="latest-product__text">--}}
-{{--                        <h4>Hottest product</h4>--}}
-{{--                        <div class="latest-product__slider owl-carousel">--}}
-{{--                            <div class="latest-prdouct__slider__item">--}}
-{{--                                <a href="#" class="latest-product__item">--}}
-{{--                                    <div class="latest-product__item__pic">--}}
-{{--                                        <img src="{{$newProduct[83] -> thumbnail}}">--}}
-{{--                                    </div>--}}
-{{--                                    <div class="latest-product__item__text">--}}
-{{--                                        <h6>{{$newProduct[83] -> name}}</h6>--}}
-{{--                                        <span>{{number_format($newProduct[83] -> price)}} $</span>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                                <a href="#" class="latest-product__item">--}}
-{{--                                    <div class="latest-product__item__pic">--}}
-{{--                                        <img src="{{$newProduct[80] -> thumbnail}}"--}}
-{{--                                             alt="">--}}
-{{--                                    </div>--}}
-{{--                                    <div class="latest-product__item__text">--}}
-{{--                                        <h6>{{$newProduct[80] -> name}}</h6>--}}
-{{--                                        <span>{{number_format($newProduct[80] -> price)}} $</span>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                                <a href="#" class="latest-product__item">--}}
-{{--                                    <div class="latest-product__item__pic">--}}
-{{--                                        <img src="{{$newProduct[79] -> thumbnail}}"--}}
-{{--                                             alt="">--}}
-{{--                                    </div>--}}
-{{--                                    <div class="latest-product__item__text">--}}
-{{--                                        <h6>{{$newProduct[79] -> name}}</h6>--}}
-{{--                                        <span>{{number_format($newProduct[79] -> price)}} $</span>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                            <div class="latest-prdouct__slider__item">--}}
-{{--                                <a href="#" class="latest-product__item">--}}
-{{--                                    <div class="latest-product__item__pic">--}}
-{{--                                        <img src="{{$newProduct[42] -> thumbnail}}"--}}
-{{--                                             alt="">--}}
-{{--                                    </div>--}}
-{{--                                    <div class="latest-product__item__text">--}}
-{{--                                        <h6>{{$newProduct[42] -> name}}</h6>--}}
-{{--                                        <span>{{number_format($newProduct[42] -> price)}} $</span>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                                <a href="#" class="latest-product__item">--}}
-{{--                                    <div class="latest-product__item__pic">--}}
-{{--                                        <img src="{{$newProduct[35] -> thumbnail}}"--}}
-{{--                                             alt="">--}}
-{{--                                    </div>--}}
-{{--                                    <div class="latest-product__item__text">--}}
-{{--                                        <h6>{{$newProduct[35] -> name}}</h6>--}}
-{{--                                        <span>{{number_format($newProduct[35] -> price)}} $</span>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                                <a href="#" class="latest-product__item">--}}
-{{--                                    <div class="latest-product__item__pic">--}}
-{{--                                        <img src="{{$newProduct[24] -> thumbnail}}"--}}
-{{--                                             alt="">--}}
-{{--                                    </div>--}}
-{{--                                    <div class="latest-product__item__text">--}}
-{{--                                        <h6>{{$newProduct[24] -> name}}</h6>--}}
-{{--                                        <span>{{number_format($newProduct[24] -> price)}} $</span>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Recommend Product</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{$newProduct[82] -> thumbnail}}">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>{{$newProduct[82] -> name}}</h6>
+                                        <span>{{number_format($newProduct[82] -> price)}} $</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{$newProduct[23] -> thumbnail}}"
+                                             alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>{{$newProduct[23] -> name}}</h6>
+                                        <span>{{number_format($newProduct[23] -> price)}} $</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{$newProduct[86] -> thumbnail}}"
+                                             alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>{{$newProduct[86] -> name}}</h6>
+                                        <span>{{number_format($newProduct[86] -> price)}} $</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{$newProduct[75] -> thumbnail}}"
+                                             alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>{{$newProduct[75] -> name}}</h6>
+                                        <span>{{number_format($newProduct[75] -> price)}} $</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{$newProduct[68] -> thumbnail}}"
+                                             alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>{{$newProduct[68] -> name}}</h6>
+                                        <span>{{number_format($newProduct[68] -> price)}} $</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{$newProduct[8] -> thumbnail}}"
+                                             alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>{{$newProduct[8] -> name}}</h6>
+                                        <span>{{number_format($newProduct[8] -> price)}} $</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Hottest product</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{$newProduct[83] -> thumbnail}}">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>{{$newProduct[83] -> name}}</h6>
+                                        <span>{{number_format($newProduct[83] -> price)}} $</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{$newProduct[80] -> thumbnail}}"
+                                             alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>{{$newProduct[80] -> name}}</h6>
+                                        <span>{{number_format($newProduct[80] -> price)}} $</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{$newProduct[79] -> thumbnail}}"
+                                             alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>{{$newProduct[79] -> name}}</h6>
+                                        <span>{{number_format($newProduct[79] -> price)}} $</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{$newProduct[42] -> thumbnail}}"
+                                             alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>{{$newProduct[42] -> name}}</h6>
+                                        <span>{{number_format($newProduct[42] -> price)}} $</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{$newProduct[35] -> thumbnail}}"
+                                             alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>{{$newProduct[35] -> name}}</h6>
+                                        <span>{{number_format($newProduct[35] -> price)}} $</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="{{$newProduct[24] -> thumbnail}}"
+                                             alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>{{$newProduct[24] -> name}}</h6>
+                                        <span>{{number_format($newProduct[24] -> price)}} $</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="backtop">

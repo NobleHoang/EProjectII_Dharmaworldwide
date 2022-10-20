@@ -26,12 +26,21 @@ class FormProductRequest extends FormRequest
         return [
             'name' => ['required'],
             'thumbnail' => ['required'],
-            'gardenName' => ['required', 'min:5'],
+            'labelName' => ['required', 'min:5'],
             'category' => ['required'],
             'weight' =>  ['required'],
-            'vitamin' =>  ['required'],
-            'nutrient' =>  ['required'],
+            'Tag' =>  ['required'],
+            'labelTitle' =>  ['required'],
             'price' =>  ['numeric', 'required'],
+            'name',
+            'labelName',
+            'price',
+            'weight',
+            'category',
+            'labelTitle',
+            'Tag',
+            'thumbnail',
+            'description',
         ];
     }
 
@@ -40,13 +49,13 @@ class FormProductRequest extends FormRequest
         return [
             'name.required' => 'Enter product name',
             'thumbnail.required' => 'Please add product pictures',
-            'gardenName.required' => 'Please enter file size',
+            'labelName.required' => 'Please enter file size',
             'category.required' => 'Please enter Label Name',
             'weight.required' => 'Vui lòng nhập cân nặng sản phẩm',
-            'vitamin.required' => 'Vui lòng nhập vitamin sản phẩm',
-            'nutrient.required' => 'Vui lòng nhập chất ding dưỡng sản phẩm',
+            'Tag.required' => 'Vui lòng nhập vitamin sản phẩm',
+            'labelTitle.required' => 'Vui lòng nhập chất ding dưỡng sản phẩm',
             'price.required' => 'Vui lòng nhập giá sản phẩm',
-            'gardenName.min' => 'Tên nhà vườn tối thiểu 5 ký tự',
+            'labelName.min' => 'Tên nhà vườn tối thiểu 5 ký tự',
         ];
     }
 }

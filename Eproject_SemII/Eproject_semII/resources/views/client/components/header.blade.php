@@ -27,11 +27,10 @@
             {{--            </li>--}}
             <li><a href="#">Nhà Vườn</a>
                 <ul class="header__menu__dropdown">
-                    <li><a href="/garden/name1">Vườn rau, trái cây sạch bà Họa</a></li>
-                    <li><a href="/garden/name2">Rau sạch Minh Hiệp</a></li>
-                    <li><a href="/garden/name3">Nhà Vườn Duy Quang</a></li>
-                    <li><a href="/garden/name4">Nhà Vườn Quang Huy</a></li>
-                    <li><a href="/garden/name5">Nhà Vườn Tiến Dũng</a></li>
+                    <li><a href="/label/name1">Vườn rau, trái cây sạch bà Họa</a></li>
+                    <li><a href="/label/name2">Rau sạch Minh Hiệp</a></li>
+                    <li><a href="/label/name3">Nhà Vườn Duy Quang</a></li>
+                    <li><a href="/label/name4">Nhà Vườn Quang Huy</a></li>
                 </ul>
             </li>
             <li><a href="/contact">Contact</a></li>
@@ -56,11 +55,10 @@
                         <li><a href="/shopping/cart">Shopping Cart</a></li>
                         <li><a href="#">Label Name</a>
                             <ul class="header__menu__dropdown">
-                                <li><a href="/garden/name1">MonsterCat</a></li>
-                                <li><a href="/garden/name2">UltraSonic</a></li>
-                                <li><a href="/garden/name3">Dharma Worldwide</a></li>
-                                <li><a href="/garden/name4">Revealed</a></li>
-                                <li><a href="/garden/name5">Nhà Vườn Tiến Dũng</a></li>
+                                <li><a href="/label/name1">MonsterCat</a></li>
+                                <li><a href="/label/name2">UltraSonic</a></li>
+                                <li><a href="/label/name3">Dharma Worldwide</a></li>
+                                <li><a href="/label/name4">Revealed</a></li>
                             </ul>
                         </li>
                         <li><a href="/contact">Contact</a></li>
@@ -122,10 +120,10 @@
                 </div>
                 <div class="hero__item set-bg" data-setbg="/libs/client/img/hero/img_2.png">
                     <div class="hero__text">
-                        <span>Rau Sạch</span>
-                        <h2>Rau quả<br/>100% hữu cơ</h2>
-                        <p>Nhận và giao hàng miễn phí</p>
-                        <a href="/products" class="primary-btn">Mua Ngay</a>
+                        <span>D H A R M A</span>
+                        <h2>Courses<br/>100% quality</h2>
+                        <p>Get and experience it firsthand</p>
+                        <a href="/products" class="primary-btn">Buy now</a>
                     </div>
                 </div>
             </div>

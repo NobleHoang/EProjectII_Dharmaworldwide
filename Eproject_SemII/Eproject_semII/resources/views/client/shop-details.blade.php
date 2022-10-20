@@ -21,8 +21,8 @@
                         <h3>{{$news->name}}</h3>
                         <div class="product__details__price">{{number_format($news->price)}} $</div>
                             <li><b>Description :</b> <span>{{$news->description}}</span></li>
-                            <li><b>Vitamin :</b> <span>{{$news->vitamin}}</span></li>
-                            <li><b>Tag :</b> <span>{{$news->nutrient}}</span></li>
+                            <li><b>Label :</b> <span>{{$news->labelTitle}}</span></li>
+                            <li><b>Tag :</b> <span>{{$news->Tag}}</span></li>
                             <li><b>Capacity :</b> <span>{{$news->weight}}</span></li>
                         </ul>
                         <div class="product__details__quantity mt-3 pt-5 border-top d-block">

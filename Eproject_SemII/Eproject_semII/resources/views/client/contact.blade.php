@@ -13,21 +13,21 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                     <div class="contact__widget">
                         <span class="icon_phone"></span>
-                        <h4>Điện Thoại</h4>
+                        <h4>Phone</h4>
                         <p>+84 88.888.888</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                     <div class="contact__widget">
                         <span class="icon_pin_alt"></span>
-                        <h4>Địa Chỉ</h4>
+                        <h4>Address</h4>
                         <p>8 Tôn Thất Thuyết, Mỹ Đình, Cầu Giấy, Hà Nội, Vietnam</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                     <div class="contact__widget">
                         <span class="icon_clock_alt"></span>
-                        <h4>Giờ Hoạt Động</h4>
+                        <h4>Time</h4>
                         <p>8:00 AM - 12h PM</p>
                         <p>2:00 PM - 18h PM</p>
                     </div>
@@ -50,7 +50,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="contact__form__title">
-                        <h2>Để Lại Lời Nhắn</h2>
+                        <h2>Send Message</h2>
                     </div>
                 </div>
             </div>
@@ -58,24 +58,24 @@
                 @csrf
                 <div class="row">
                     <div class="col-lg-6 col-md-6 mb-5">
-                        <input type="text" placeholder="Tên Của Bạn" name="name">
+                        <input type="text" placeholder="Enter your name" name="name">
                         @error('name')
                         <div class="text-danger">* {{ $message }}</div>
                         @enderror
                     </div>
                     <div class="col-lg-6 col-md-6 mb-5">
-                        <input type="text" placeholder="Email Của Bạn" name="email">
+                        <input type="text" placeholder="Enter your email" name="email">
                         @error('email')
                         <div class="text-danger">* {{ $message }}</div>
                         @enderror
 
                     </div>
                     <div class="col-lg-12 text-center">
-                        <textarea placeholder="Lời Nhắn Của Bạn" name="note"></textarea>
+                        <textarea placeholder="Your message" name="note"></textarea>
                         @error('note')
                         <div class="text-danger">* {{ $message }}</div>
                         @enderror
-                        <button type="submit" class="btn btn-submit">Gừi Lời Nhắn</button>
+                        <button type="submit" class="btn btn-submit">Send</button>
                     </div>
                 </div>
             </form>

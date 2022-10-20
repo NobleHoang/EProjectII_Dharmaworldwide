@@ -17,11 +17,11 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->text('thumbnail');
-            $table->string('gardenName');
+            $table->string('labelName');
             $table->integer('category');
             $table->string('weight');
-            $table->string('vitamin');
-            $table->string('nutrient');
+            $table->string('labelTitle');
+            $table->string('Tag');
             $table->double('price');
             $table->text('description');
             $table->timestamps();

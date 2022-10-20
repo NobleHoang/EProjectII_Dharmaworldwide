@@ -146,29 +146,27 @@
                                 <form action="" id="filter_form">
                                     <select class="selectpicker form-control" id="price" name="price">
                                         <option selected disabled hidden>Filter by price</option>
-                                        <option value="1" {{$price && $price == 1 ? 'selected':''}}>0-20.000 $</option>
-                                        <option value="2" {{$price && $price == 2 ? 'selected':''}}>20.000-50.000 $</option>
-                                        <option value="3" {{$price && $price == 3 ? 'selected':''}}>50.000-100.000 $</option>
-                                        <option value="4" {{$price && $price == 4 ? 'selected':''}}>> 100.000 $</option>
+                                        <option value="1" {{$price && $price == 1 ? 'selected':''}}>0-20 $</option>
+                                        <option value="2" {{$price && $price == 2 ? 'selected':''}}>20-50 $</option>
+                                        <option value="3" {{$price && $price == 3 ? 'selected':''}}>50-100 $</option>
+                                        <option value="4" {{$price && $price == 4 ? 'selected':''}}>> 100 $</option>
                                     </select>
                                     <select class="selectpicker form-control" id="category" name="category">
                                         <option selected disabled hidden>Filter by category</option>
-                                        <option value="1" {{$category && $category == 1 ? 'selected':''}}>Rau</option>
-                                        <option value="2" {{$category && $category == 2 ? 'selected':''}}>Củ</option>
-                                        <option value="3" {{$category && $category == 3 ? 'selected':''}}>Quả</option>
+                                        <option value="1" {{$category && $category == 1 ? 'selected':''}}>Progressive House</option>
+                                        <option value="2" {{$category && $category == 2 ? 'selected':''}}>Futurebass</option>
+                                        <option value="3" {{$category && $category == 3 ? 'selected':''}}>Bigroom</option>
                                     </select>
-                                    <select class="selectpicker form-control" id="gardenName" name="gardenName">
+                                    <select class="selectpicker form-control" id="labelName" name="labelName">
                                         <option selected disabled hidden>Filter by label</option>
-                                        <option value="1" {{$gardenName && $gardenName == 1 ? 'selected':''}}>Vườn rau, trái cây sạch bà Họa
+                                        <option value="1" {{$labelName && $labelName == 1 ? 'selected':''}}>Monstercat
                                         </option>
-                                        <option value="2" {{$gardenName && $gardenName == 2 ? 'selected':''}}>Rau sạch Minh Hiệp
+                                        <option value="2" {{$labelName && $labelName == 2 ? 'selected':''}}>Ultrasonic
                                         </option>
-                                        <option value="3" {{$gardenName && $gardenName == 3 ? 'selected':''}}>Nhà Vườn Duy Quang
+                                        <option value="3" {{$labelName && $labelName == 3 ? 'selected':''}}>Dharma Studio
                                         </option>
-                                        <option value="4" {{$gardenName && $gardenName == 4 ? 'selected':''}}>Nhà Vườn Quang Huy
-                                        </option>
-                                        <option value="5" {{$gardenName && $gardenName == 5 ? 'selected':''}}>Nhà Vườn Tiến Dũng
-                                        </option>
+                                        <option value="4" {{$labelName && $labelName == 4 ? 'selected':''}}>Revealed
+
                                     </select>
                                 </form>
                             </ul>
@@ -280,7 +278,7 @@
                                     </div>
                                     <div class="product__item__text">
                                         <h6>{{$obj->name}}</h6>
-                                        <h6><a href="#">{{$obj->gardenName}}</a></h6>
+                                        <h6><a href="#">{{$obj->labelName}}</a></h6>
                                         <h5>{{number_format($obj->price)}} $</h5>
                                     </div>
                                 </div>
@@ -318,7 +316,7 @@
             $('#price').change(function () {
                 $('#filter_form').submit()
             })
-            $('#gardenName').change(function () {
+            $('#labelName').change(function () {
                 $('#filter_form').submit()
             })
             $('#category').change(function () {

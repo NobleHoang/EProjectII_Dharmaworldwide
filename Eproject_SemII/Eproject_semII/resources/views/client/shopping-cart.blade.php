@@ -72,7 +72,7 @@
 {{--                                                    <figcaption class="info"><a href="#" class="title text-dark"--}}
 {{--                                                                                data-abc="true"><h4>Tên Sản Phẩm:</h4>--}}
 {{--                                                        </a>--}}
-{{--                                                        <p>{{$obj->name}}<br>Tên Nhà Vườn: {{$obj->gardenName}}</p>--}}
+{{--                                                        <p>{{$obj->name}}<br>Tên Nhà Vườn: {{$obj->labelName}}</p>--}}
 {{--                                                    </figcaption>--}}
 {{--                                                </div>--}}
 {{--                                            </td>--}}

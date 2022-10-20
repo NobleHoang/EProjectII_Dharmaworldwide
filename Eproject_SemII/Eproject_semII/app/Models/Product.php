@@ -12,13 +12,13 @@ class Product extends Model
     protected $fillable = [
         'id',
         'name',
-        'thumbnail',
-        'weight',
+        'labelName',
         'price',
+        'weight',
         'category',
-        'gardenName',
-        'nutrient',
-        'vitamin',
+        'labelTitle',
+        'Tag',
+        'thumbnail',
         'description',
     ];
 }

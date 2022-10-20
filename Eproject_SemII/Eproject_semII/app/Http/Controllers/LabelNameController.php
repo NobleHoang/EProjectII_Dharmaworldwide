@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
-class GardenNameController extends Controller
+class LabelNameController extends Controller
 {
-    public function garden1(Request $request)
+    public function label1(Request $request)
     {
         $queryBuilder = Product::query();
         $search = $request->query('search');
@@ -16,11 +16,11 @@ class GardenNameController extends Controller
         $events = $queryBuilder->paginate(9)->appends(['search' => $search]);
         if ($search && strlen($search) > 0) {
             $queryBuilder = $queryBuilder->where('name', 'like', '%' . $search . '%')
-                ->orWhere('vitamin', 'like', '%' . $search . '%')
-                ->orWhere('nutrient', 'like', '%' . $search . '%');
+                ->orWhere('Tag', 'like', '%' . $search . '%')
+                ->orWhere('labelTitle', 'like', '%' . $search . '%');
 
         }
-        $gardenName = Product::query()->where('gardenName', 'like', 'Monstercat')->limit(20)->get();
+        $labelName = Product::query()->where('labelName', 'like', 'Monstercat')->limit(20)->get();
 
         if ($price == 1) {
             $queryBuilder = $queryBuilder->whereBetween('price', [0, 20]);
@@ -44,16 +44,16 @@ class GardenNameController extends Controller
             $queryBuilder = $queryBuilder->where('category', '=', 3);
         }
         $newProduct = Product::query()->orderBy('id', 'DESC')->take(6)->get();
-        return view('client/gardenName/gardenName1', [
+        return view('client/labelName/labelName1', [
             'list' => $events,
             'newProduct' => $newProduct,
             'price' => $price,
-            'gardenName' => $gardenName,
+            'labelName' => $labelName,
             'category' => $category
         ]);
     }
 
-    public function garden2(Request $request)
+    public function label2(Request $request)
     {
         $queryBuilder = Product::query();
         $search = $request->query('search');
@@ -61,10 +61,10 @@ class GardenNameController extends Controller
         $category = $request->get('category');
         if ($search && strlen($search) > 0) {
             $queryBuilder = $queryBuilder->where('name', 'like', '%' . $search . '%')
-                ->orWhere('vitamin', 'like', '%' . $search . '%')
-                ->orWhere('nutrient', 'like', '%' . $search . '%');
+                ->orWhere('Tag', 'like', '%' . $search . '%')
+                ->orWhere('labelTitle', 'like', '%' . $search . '%');
         }
-        $gardenName = Product::query()->where('gardenName', 'like', 'UltraSonic-Sound')->limit(21)->get();
+        $labelName = Product::query()->where('labelName', 'like', 'UltraSonic')->limit(21)->get();
 
         if ($price == 1) {
             $queryBuilder = $queryBuilder->whereBetween('price', [0, 20]);
@@ -90,27 +90,27 @@ class GardenNameController extends Controller
         }
         $events = $queryBuilder->paginate(9)->appends(['search' => $search]);
         $newProduct = Product::query()->orderBy('id', 'DESC')->take(6)->get();
-        return view('client/gardenName/gardenName2', [
+        return view('client/labelName/labelName2', [
             'list' => $events,
             'newProduct' => $newProduct,
             'price' => $price,
-            'gardenName' => $gardenName,
+            'labelName' => $labelName,
             'category' => $category
         ]);
     }
 
-    public function garden3(Request $request)
+    public function label3(Request $request)
     {
         $queryBuilder = Product::query();
         $search = $request->query('search');
         $price = $request->get('price');
-        $gardenName = $request->get('gardenName');
+        $labelName = $request->get('labelName');
         $category = $request->get('category');
-        $garden = Product::query()->where('gardenName', 'like', 'Dharma Studio')->limit(21)->get();
+        $label = Product::query()->where('labelName', 'like', 'Dharma Studio')->limit(21)->get();
         if ($search && strlen($search) > 0) {
             $queryBuilder = $queryBuilder->where('name', 'like', '%' . $search . '%')
-                ->orWhere('vitamin', 'like', '%' . $search . '%')
-                ->orWhere('nutrient', 'like', '%' . $search . '%');
+                ->orWhere('Tag', 'like', '%' . $search . '%')
+                ->orWhere('labelTitle', 'like', '%' . $search . '%');
         }
         if ($price == 1) {
             $queryBuilder = $queryBuilder->whereBetween('price', [0, 20]);
@@ -135,28 +135,28 @@ class GardenNameController extends Controller
         }
         $events = $queryBuilder->paginate(9)->appends(['search' => $search]);
         $newProduct = Product::query()->orderBy('id', 'DESC')->take(6)->get();
-        return view('client/gardenName/gardenName3', [
+        return view('client/labelName/labelName3', [
             'list' => $events,
             'newProduct' => $newProduct,
             'price' => $price,
-            'gardenName' => $gardenName,
-            'garden' => $garden,
+            'labelName' => $labelName,
+            'label' => $label,
             'category' => $category
         ]);
     }
 
-    public function garden4(Request $request)
+    public function label4(Request $request)
     {
         $queryBuilder = Product::query();
         $search = $request->query('search');
         $price = $request->get('price');
-        $gardenName = $request->get('gardenName');
+        $labelName = $request->get('labelName');
         $category = $request->get('category');
-        $garden = Product::query()->where('gardenName', 'like', 'Revealed')->limit(21)->get();
+        $label = Product::query()->where('labelName', 'like', 'Revealed')->limit(21)->get();
         if ($search && strlen($search) > 0) {
             $queryBuilder = $queryBuilder->where('name', 'like', '%' . $search . '%')
-                ->orWhere('vitamin', 'like', '%' . $search . '%')
-                ->orWhere('nutrient', 'like', '%' . $search . '%');
+                ->orWhere('Tag', 'like', '%' . $search . '%')
+                ->orWhere('labelTitle', 'like', '%' . $search . '%');
         }
         if ($price == 1) {
             $queryBuilder = $queryBuilder->whereBetween('price', [0, 20]);
@@ -168,7 +168,7 @@ class GardenNameController extends Controller
             $queryBuilder = $queryBuilder->whereBetween('price', [50, 100]);
         }
         if ($price == 4) {
-            $queryBuilder = $queryBuilder->where('price', '>', 100);
+            $queryBuilder = $queryBuilder->where('price', '>' ,100);
         }
 
         if ($category == 1) {
@@ -182,61 +182,17 @@ class GardenNameController extends Controller
         }
         $events = $queryBuilder->paginate(9)->appends(['search' => $search]);
         $newProduct = Product::query()->orderBy('id', 'DESC')->take(6)->get();
-        return view('client/gardenName/gardenName4', [
+        return view('client/labelName/labelName4', [
             'list' => $events,
             'newProduct' => $newProduct,
             'price' => $price,
-            'gardenName' => $gardenName,
-            'garden' => $garden,
+            'labelName' => $labelName,
+            'label' => $label,
             'category' => $category
         ]);
     }
 
-    public function garden5(Request $request)
-    {
-        $queryBuilder = Product::query();
-        $search = $request->query('search');
-        $price = $request->get('price');
-        $category = $request->get('category');
-        $garden = Product::query()->where('gardenName', 'like', 'Nhà Vườn Tiến Dũng')->limit(21)->get();
-        if ($search && strlen($search) > 0) {
-            $queryBuilder = $queryBuilder->where('name', 'like', '%' . $search . '%')
-                ->orWhere('vitamin', 'like', '%' . $search . '%')
-                ->orWhere('nutrient', 'like', '%' . $search . '%');
-        }
 
-        if ($price == 1) {
-            $queryBuilder = $queryBuilder->whereBetween('price', [0, 20]);
-        }
-        if ($price == 2) {
-            $queryBuilder = $queryBuilder->whereBetween('price', [20, 50]);
-        }
-        if ($price == 3) {
-            $queryBuilder = $queryBuilder->whereBetween('price', [50, 100]);
-        }
-        if ($price == 4) {
-            $queryBuilder = $queryBuilder->where('price', '>', 100);
-        }
-
-        if ($category == 1) {
-            $queryBuilder = $queryBuilder->where('category', '=', 1);
-        }
-        if ($category == 2) {
-            $queryBuilder = $queryBuilder->where('category', '=', 2);
-        }
-        if ($category == 3) {
-            $queryBuilder = $queryBuilder->where('category', '=', 3);
-        }
-        $events = $queryBuilder->paginate(9)->appends(['search' => $search]);
-        $newProduct = Product::query()->orderBy('id', 'DESC')->take(6)->get();
-        return view('client/gardenName/gardenName5', [
-            'list' => $events,
-            'newProduct' => $newProduct,
-            'price' => $price,
-            'garden' => $garden,
-            'category' => $category
-        ]);
-    }
 }
 
 

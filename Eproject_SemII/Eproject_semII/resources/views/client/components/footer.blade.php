@@ -7,7 +7,7 @@
                         <a href="/"><img src="/libs/client/img/logo/logo.png" style="width: 123px"></a>
                     </div>
                     <ul>
-                        <li>Địa Chỉ: 8 Tôn Thất Thuyết, Mỹ Đình, Cầu Giấy, Hà Nội, Việt Nam</li>
+                        <li>Address: 8 Tôn Thất Thuyết, Mỹ Đình, Cầu Giấy, Hà Nội, Việt Nam</li>
                         <li>Phone: +84 88.888.888</li>
                         <li>Email: eproject@gmail.com</li>
                     </ul>
@@ -15,21 +15,24 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
                 <div class="footer__widget">
-                    <h6>Liên Kết Hữu Dụng</h6>
+                    <h6>
+                        Useful links</h6>
                     <ul>
-                        <li><a href="/about-us">Về Chúng Tôi</a></li>
-                        <li><a href="/about-web">Về Web Của Chúng Tôi</a></li>
-                        <li><a href="#">Mua Sắm An Toàn</a></li>
-                        <li><a href="/contact">Liên Hệ</a></li>
+                        <li><a href="#">About Us</a></li>
+
+                        <li><a href="#">
+                                Safe shopping</a></li>
+                        <li><a href="/contact">COntact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
                 <div class="footer__widget">
-                    <h6>Nhận Thông Báo Từ Chúng Tôi Ngay</h6>
+                    <h6>
+                        Receive notifications from us</h6>
                     <form action="#">
-                        <input type="text" placeholder="Nhập email của bạn">
-                        <button type="submit" class="site-btn">Gửi</button>
+                        <input type="text" placeholder="Enter your Email">
+                        <button type="submit" class="site-btn">Send</button>
                     </form>
                     <div class="footer__widget__social">
                         <a href="#"><i class="fa fa-facebook"></i></a>

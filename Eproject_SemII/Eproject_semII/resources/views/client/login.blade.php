@@ -14,7 +14,7 @@
                         <div class="row g-0">
                             <div class="col-xl-6 d-none d-xl-block">
                                 <img
-                                    src="/libs/client/img/img-form.jpg"
+                                    src="/libs/client/img/logo/login.jpg"
                                     width="525px" height="600px"
                                 />
                             </div>
@@ -54,7 +54,7 @@
                                         @error('password')
                                         <div class="text-danger">* {{ $message }}</div>
                                         @enderror
-                                        <div class="row justify-content-center px-3"> <button type="submit" class="btn-block btn-submit">Gửi</button> </div>
+                                        <div class="row justify-content-center px-3"> <button type="submit" class="btn-block btn-submit">Send</button> </div>
                                         <div class="row justify-content-center my-2"> <a href="#" class="text-muted">Forgot Password?</a> </div>
                                         <div class="bottom text-center mb-5">
                                             <p href="/home/register" class="sm-text mx-auto mb-3">You don't have an account?

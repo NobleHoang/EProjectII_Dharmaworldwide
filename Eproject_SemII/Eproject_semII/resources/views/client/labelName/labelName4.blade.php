@@ -175,9 +175,9 @@
                                     </select>
                                     <select class="selectpicker form-control" id="category" name="category">
                                         <option selected disabled hidden>Filter by category</option>
-                                        <option value="1" {{$category && $category == 1 ? 'selected':''}}>Rau</option>
-                                        <option value="2" {{$category && $category == 2 ? 'selected':''}}>Củ</option>
-                                        <option value="3" {{$category && $category == 3 ? 'selected':''}}>Quả</option>
+                                        <option value="1" {{$category && $category == 1 ? 'selected':''}}>Progressvie House</option>
+                                        <option value="2" {{$category && $category == 2 ? 'selected':''}}>Future Bass</option>
+                                        <option value="3" {{$category && $category == 3 ? 'selected':''}}>Bigroom</option>
                                     </select>
                                 </form>
                             </ul>
@@ -283,7 +283,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        @foreach($garden as $obj)
+                        @foreach($label as $obj)
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
                                     <div class="product__item__pic set-bg" data-setbg="{{$obj->thumbnail}}">
@@ -295,7 +295,7 @@
                                     </div>
                                     <div class="product__item__text">
                                         <h6>{{$obj->name}}</h6>
-                                        <h6><a href="#">{{$obj->gardenName}}</a></h6>
+                                        <h6><a href="#">{{$obj->labelName}}</a></h6>
                                         <h5>{{number_format($obj->price)}} $</h5>
                                     </div>
                                 </div>
@@ -335,7 +335,7 @@
             $('#price').change(function () {
                 $('#filter_form').submit()
             })
-            $('#gardenName').change(function () {
+            $('#labelName').change(function () {
                 $('#filter_form').submit()
             })
             $('#category').change(function () {

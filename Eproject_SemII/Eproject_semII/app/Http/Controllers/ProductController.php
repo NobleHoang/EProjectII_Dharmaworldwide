@@ -16,12 +16,12 @@ class ProductController extends Controller
         $newProduct = Product::query()->orderBy('id', 'DESC')->take(6)->get();
         $search = $request->get('search');
         $price = $request->get('price');
-        $gardenName = $request->get('gardenName');
+        $labelName = $request->get('labelName');
         $category = $request->get('category');
         if ($search && strlen($search) > 0) {
             $queryBuilder = $queryBuilder->where('name', 'like', '%' . $search . '%')
-                -> orWhere('vitamin', 'like', '%' . $search . '%')
-                -> orWhere('nutrient', 'like', '%' . $search . '%');
+                -> orWhere('Tag', 'like', '%' . $search . '%')
+                -> orWhere('labelTitle', 'like', '%' . $search . '%');
         }
         if ($price == 1) {
             $queryBuilder = $queryBuilder->whereBetween('price', [0, 20]);
@@ -36,21 +36,19 @@ class ProductController extends Controller
             $queryBuilder = $queryBuilder->where('price', '>' ,100);
         }
 
-        if ($gardenName == 1) {
-            $queryBuilder = $queryBuilder->where('gardenName', 'like', 'Vườn rau, trái cây sạch bà Họa');
+        if ($labelName == 1) {
+            $queryBuilder = $queryBuilder->where('labelName', 'like', 'Monstercat');
         }
-        if ($gardenName == 2) {
-            $queryBuilder = $queryBuilder->where('gardenName', 'like', 'Rau sạch Minh Hiệp');
+        if ($labelName == 2) {
+            $queryBuilder = $queryBuilder->where('labelName', 'like', 'Ultrasonic');
         }
-        if ($gardenName == 3) {
-            $queryBuilder = $queryBuilder->where('gardenName', 'like', 'Nhà Vườn Duy Quang');
+        if ($labelName == 3) {
+            $queryBuilder = $queryBuilder->where('labelName', 'like', 'Dharma Studio');
         }
-        if ($gardenName == 4) {
-            $queryBuilder = $queryBuilder->where('gardenName', 'like', 'Nhà Vườn Quang Huy');
+        if ($labelName == 4) {
+            $queryBuilder = $queryBuilder->where('labelName', 'like', 'Revealed');
         }
-        if ($gardenName == 5) {
-            $queryBuilder = $queryBuilder->where('gardenName', 'like', 'Nhà Vườn Tiến Dũng');
-        }
+
         if ($category == 1) {
             $queryBuilder = $queryBuilder->where('category', '=', 1);
         }
@@ -64,7 +62,7 @@ class ProductController extends Controller
         return view('client/products', [
             'list' => $events,
             'price' => $price,
-            'gardenName' => $gardenName,
+            'labelName' => $labelName,
             'category' => $category,
             'newProduct' => $newProduct
         ]);
@@ -74,37 +72,35 @@ class ProductController extends Controller
     {
         $queryBuilder = Product::query();
         $search = $request->query('search');
-        $gardenName = $request->get('gardenName');
+        $labelName = $request->get('labelName');
         $rau = Product::query()->where('category', '=', 1)->limit(8)->get();
         $cu = Product::query()->where('category', '=', 2)->limit(8)->get();
         $qua = Product::query()->where('category', '=', 3)->limit(8)->get();
         if ($search && strlen($search) > 0) {
             $queryBuilder = $queryBuilder->where('name', 'like', '%' . $search . '%')
-                -> orWhere('vitamin', 'like', '%' . $search . '%')
-                -> orWhere('nutrient', 'like', '%' . $search . '%');
+                -> orWhere('Tag', 'like', '%' . $search . '%')
+                -> orWhere('labelTitle', 'like', '%' . $search . '%');
         }
 
-        if ($gardenName == 1) {
-            $queryBuilder = $queryBuilder->where('gardenName', 'like', 'Vườn rau, trái cây sạch bà Họa');
+        if ($labelName == 1) {
+            $queryBuilder = $queryBuilder->where('labelName', 'like', 'Monstercat');
         }
-        if ($gardenName == 2) {
-            $queryBuilder = $queryBuilder->where('gardenName', 'like', 'Rau sạch Minh Hiệp');
+        if ($labelName == 2) {
+            $queryBuilder = $queryBuilder->where('labelName', 'like', 'Ultrasonic');
         }
-        if ($gardenName == 3) {
-            $queryBuilder = $queryBuilder->where('gardenName', 'like', 'Nhà Vườn Duy Quang');
+        if ($labelName == 3) {
+            $queryBuilder = $queryBuilder->where('labelName', 'like', 'Dharma Studio');
         }
-        if ($gardenName == 4) {
-            $queryBuilder = $queryBuilder->where('gardenName', 'like', 'Nhà Vườn Quang Huy');
+        if ($labelName == 4) {
+            $queryBuilder = $queryBuilder->where('labelName', 'like', 'Revealed');
         }
-        if ($gardenName == 5) {
-            $queryBuilder = $queryBuilder->where('gardenName', 'like', 'Nhà Vườn Tiến Dũng');
-        }
+
         $events = $queryBuilder->paginate(9)->appends(['search' => $search]);
         $newProduct = Product::query()->orderBy('id', 'DESC')->take(200)->get();
         return view('client/home', [
             'list' => $events,
             'newProduct' => $newProduct,
-            'gardenName' => $gardenName,
+            'labelName' => $labelName,
             'rau' => $rau,
             'cu' => $cu,
             'qua' => $qua,
@@ -116,40 +112,37 @@ class ProductController extends Controller
         $queryBuilder = Product::query();
         $search = $request->query('search');
         $price = $request->get('price');
-        $gardenName = $request->get('gardenName');
+        $labelName = $request->get('labelName');
         $category = $request->get('category');
         if ($search && strlen($search) > 0) {
             $queryBuilder = $queryBuilder->where('name', 'like', '%' . $search . '%')
-                -> orWhere('vitamin', 'like', '%' . $search . '%')
-                -> orWhere('nutrient', 'like', '%' . $search . '%');
+                -> orWhere('Tag', 'like', '%' . $search . '%')
+                -> orWhere('labelTitle', 'like', '%' . $search . '%');
         }
         if ($price == 1) {
-            $queryBuilder = $queryBuilder->whereBetween('price', [0, 20000]);
+            $queryBuilder = $queryBuilder->whereBetween('price', [0, 20]);
         }
         if ($price == 2) {
-            $queryBuilder = $queryBuilder->whereBetween('price', [20000, 50000]);
+            $queryBuilder = $queryBuilder->whereBetween('price', [20, 50]);
         }
         if ($price == 3) {
-            $queryBuilder = $queryBuilder->whereBetween('price', [50000, 100000]);
+            $queryBuilder = $queryBuilder->whereBetween('price', [50, 100]);
         }
         if ($price == 4) {
-            $queryBuilder = $queryBuilder->where('price', '>' ,100000);
+            $queryBuilder = $queryBuilder->where('price', '>' ,100);
         }
 
-        if ($gardenName == 1) {
-            $queryBuilder = $queryBuilder->where('gardenName', 'like', 'Vườn rau, trái cây sạch bà Họa');
+        if ($labelName == 1) {
+            $queryBuilder = $queryBuilder->where('labelName', 'like', 'Monstercat');
         }
-        if ($gardenName == 2) {
-            $queryBuilder = $queryBuilder->where('gardenName', 'like', 'Rau sạch Minh Hiệp');
+        if ($labelName == 2) {
+            $queryBuilder = $queryBuilder->where('labelName', 'like', 'Ultrasonic');
         }
-        if ($gardenName == 3) {
-            $queryBuilder = $queryBuilder->where('gardenName', 'like', 'Nhà Vườn Duy Quang');
+        if ($labelName == 3) {
+            $queryBuilder = $queryBuilder->where('labelName', 'like', 'Dharma Studio');
         }
-        if ($gardenName == 4) {
-            $queryBuilder = $queryBuilder->where('gardenName', 'like', 'Nhà Vườn Quang Huy');
-        }
-        if ($gardenName == 5) {
-            $queryBuilder = $queryBuilder->where('gardenName', 'like', 'Nhà Vườn Tiến Dũng');
+        if ($labelName == 4) {
+            $queryBuilder = $queryBuilder->where('labelName', 'like', 'Revealed');
         }
         if ($category == 1) {
             $queryBuilder = $queryBuilder->where('category', '=', 1);
@@ -164,7 +157,7 @@ class ProductController extends Controller
         return view('/admin/products/list-products', [
             'list' => $events,
             'price' => $price,
-            'gardenName' => $gardenName,
+            'labelName' => $labelName,
             'category' => $category
         ]);
     }

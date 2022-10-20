@@ -27,11 +27,10 @@
 {{--            </li>--}}
             <li><a href="#">Label Name</a>
                 <ul class="header__menu__dropdown">
-                    <li><a href="/garden/name1">MonsterCat</a></li>
-                    <li><a href="/garden/name2">Ultra Sonic</a></li>
-                    <li><a href="/garden/name3">Dharma Worldwide</a></li>
-                    <li><a href="/garden/name4">Revealed</a></li>
-                    <li><a href="/garden/name5">Nhà Vườn Tiến Dũng</a></li>
+                    <li><a href="/label/name1">MonsterCat</a></li>
+                    <li><a href="/label/name2">Ultra Sonic</a></li>
+                    <li><a href="/label/name3">Dharma Worldwide</a></li>
+                    <li><a href="/label/name4">Revealed</a></li>
                 </ul>
             </li>
             <li><a href="/contact">Contact</a></li>
@@ -62,11 +61,10 @@
 {{--                        </li>--}}
                         <li><a href="#">Label Name</a>
                             <ul class="header__menu__dropdown">
-                                <li><a href="/garden/name1">MonsterCat</a></li>
-                                <li><a href="/garden/name2">Ultra Sonic</a></li>
-                                <li><a href="/garden/name3">Dharma Worldwide</a></li>
-                                <li><a href="/garden/name4">Revealed</a></li>
-                                <li><a href="/garden/name5">Nhà Vườn Tiến Dũng</a></li>
+                                <li><a href="/label/name1">MonsterCat</a></li>
+                                <li><a href="/label/name2">Ultra Sonic</a></li>
+                                <li><a href="/label/name3">Dharma Worldwide</a></li>
+                                <li><a href="/label/name4">Revealed</a></li>
                             </ul>
                         </li>
                         <li><a href="/contact">Contact</a></li>

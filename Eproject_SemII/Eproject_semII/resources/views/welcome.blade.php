@@ -4,7 +4,7 @@
         [
         'id'=>{{$items->id}},
         'name'=>'{{$items->name}}'
-        'gardenName'=>{{$items->gardenName}},
+        'labelName'=>{{$items->labelName}},
         'price'=>{{$items->price}},
         'weight'=>{{$items->weight}},
         'category'=>{{$items->category}},

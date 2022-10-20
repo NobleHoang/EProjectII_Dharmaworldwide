@@ -59,7 +59,7 @@
                                             <td><input style="outline: none; width: 100px" type="number" min="1"
                                                        name="productQuantity"
                                                        value="{{$products->quantity}}"></td>
-                                            <td>{{number_format($products->quantity * $products->price)}} VNĐ</td>
+                                            <td>{{number_format($products->quantity * $products->price)}} $</td>
 
                                             <td class="actions">
                                                 <div>

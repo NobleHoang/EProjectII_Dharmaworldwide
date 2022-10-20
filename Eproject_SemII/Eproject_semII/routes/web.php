@@ -9,7 +9,7 @@ use App\Http\Controllers\DetailController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PaypalController;
 
-use App\Http\Controllers\GardenNameController;
+use App\Http\Controllers\labelNameController;
 
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ShoppingCartController;
@@ -72,11 +72,11 @@ Route::post('/create-payment', [ShoppingCartController::class, 'create_payment']
 
 
 
-Route::get('/garden/name1', [GardenNameController::class, 'garden1']);
-Route::get('/garden/name2', [GardenNameController::class, 'garden2']);
-Route::get('/garden/name3', [GardenNameController::class, 'garden3']);
-Route::get('/garden/name4', [GardenNameController::class, 'garden4']);
-Route::get('/garden/name5', [GardenNameController::class, 'garden5']);
+Route::get('/label/name1', [labelNameController::class, 'label1']);
+Route::get('/label/name2', [labelNameController::class, 'label2']);
+Route::get('/label/name3', [labelNameController::class, 'label3']);
+Route::get('/label/name4', [labelNameController::class, 'label4']);
+Route::get('/label/name5', [labelNameController::class, 'label5']);
 Route::get('seed',function (){
     $data = \App\Models\Product::all();
     return view('welcome',compact('data'));
