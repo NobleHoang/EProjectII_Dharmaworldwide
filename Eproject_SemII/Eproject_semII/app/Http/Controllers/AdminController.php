@@ -49,7 +49,7 @@ class AdminController extends Controller
         $request->validated();
         $arr = [
             'username' => $request->username,
-            'password' => $request->password
+            'password' => $request->password,
         ];
 
         if( Auth::attempt($arr)) {
